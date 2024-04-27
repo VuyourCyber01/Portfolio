@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <title>Vuyokazi Mkane</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="vuyo's logo">
+        <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- -----------------------------------------------mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">S</p>
+          <p class="jello">a</p>
+          <p class="jello">w</p>
+          <p class="jello">u</p>
+          <p class="jello">b</p>
+          <p class="jello">o</p>
+          <p class="jello">n</p>
+          <p class="jello">a</p>
+          <p class="jello">(</p>
+          <p class="jello">)</p>
+          <p class="jello">;</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">V</p>
+          <p class="jello">u</p>
+          <p class="jello">y</p>
+          <p class="jello">o</p>
+          <p class="jello">k</p>
+          <p class="jello">a</p>
+          <p class="jello">z</p>
+          <p class="jello">i</p>
+          &nbsp;
+          <p class="jello">M</p>
+          <p class="jello">k</p>
+          <p class="jello">a</p>
+          <p class="jello">n</p>
+          <p class="jello">e</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+            <p class="jello">s</p>
+            <p class="jello">i</p>
+            <p class="jello">g</p>
+            <p class="jello">n</p>
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <div>
+            <p class="jello">c</p>
+            <p class="jello">o</p>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">f</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+          </div>
+          <div>
+            <p class="jello">w</p>
+            <p class="jello">e</p>
+            <p class="jello">b</p>
+            <p class="jello">.</p>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          As a seasoned web developer with a passion for digital concept arts and frontend web designs, I bring a unique blend of
+          creativity and technical expertise to any project. I thrive on crafting fun and engaging web user interfaces,
+          collaborating with teams, and bringing products to life.<br/>
+          <br/>
+          My approach prioritizes simplicity in content structure, embraces clean design patterns, and fosters thoughtful
+          interactions, all with the goal of delivering exceptional user experiences.
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="mailto:whittanymcne1@gmail.com" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
+            </div>
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+     
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+            Greetings! My name is Vuyokazi Mkane. I am a web developer and digital visual artist drawn to collaboration and the vastness of the
+            internet. My journey
+            began I shared my digital concept arts online, sparking a passion for crafting immersive web experiences.
+            </p>
+            <br />
+            <p tabindex="0">
+            From coding custom designs to exploring the endless possibilities of the web, I'm eager to bring my expertise to your
+            team and contribute to impactful projects.
+            </p>
+     
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/webp/vuyo.webp" alt="Vuyokazi Mkane" tabindex="0" aria-label="image of vuyo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo" />
+              <span class="tooltip">Github</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/codepenlogo.png" alt="CodePen skill" class="tech-stack-logo" />
+              <span class="tooltip">CodePen</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/freecodecamplogo.png" alt="FreeCodeCamp skill" class="tech-stack-logo" />
+              <span class="tooltip">FreeCodeCamp</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/androidlogo.png" alt=android skill" class="tech-stack-logo" />
+              <span class="tooltip">Android</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">HTML</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">CSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/javascriptlogo.png" alt="javascript skill" class="tech-stack-logo" />
+              <span class="tooltip">JavaScript</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/javalogo.png" alt="java skill" class="tech-stack-logo" />
+              <span class="tooltip">Java</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/pythonlogo.png" alt="python skill" class="tech-stack-logo" />
+              <span class="tooltip">Python</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
+              <span class="tooltip">Boostrap</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">React</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/tailwindcsslogo.png" alt="ubuntu skill" class="tech-stack-logo" />
+              <span class="tooltip">TailwindCSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/wordpresslogo.png" alt="wordpress" skill" class="tech-stack-logo" />
+              <span class="tooltip">WordPress</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/photoshoplogo.png" alt="photoshop skill" class="tech-stack-logo" />
+              <span class="tooltip">PhotoShop</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
+              <span class="tooltip">Figma</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/vuelogo.png" alt="vue skill" class="tech-stack-logo" />
+              <span class="tooltip">Vuejs</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <article class="ProjectHeading">VuyOurCyber</article>
+                <p class="ProjectDescription">
+                  Introducing our AI app, Voice Activator. With a simple voice command, it opens your web applications instantly, making your digital
+                  experience effortless.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/VuyourCyber01/VuyOurCyberAI" target="_blank" class="github-redirect"
+                    aria-label="Visit VuyOurCyber on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://vuy-our-cyber-ai.vercel.app/" target="_blank" class="cta" aria-label="Visit Aquaregia Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                  <img src="src/webp/vuyourcyberAI.webp" alt="Aquaregia website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <article class="ProjectHeading">LingoLink</article>
+                <p class="ProjectDescription">
+                  Seamlessly break language barriers anytime, anywhere. Translate effortlessly with just a tap. Connect globally with
+                  ease!
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/VuyourCyber01/LingoLink" target="_blank" class="github-redirect"
+                    aria-label="Visit LingoLink on github">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://codepen.io/VuyourCyber01/pen/gOyrbVE" target="_blank" class="cta"
+                    aria-label="Visit LingoLink live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/LingoLink.webp" alt="LingoLink website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box3" id="project-box3">
+              <div class="info-div">
+                <article class="ProjectHeading">MediaFetchPro</article>
+                <p class="ProjectDescription">
+                MediaFetchPro simplifies web media downloading. Download videos & images from any social media platform or website with
+                ease.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/VuyourCyber01/MediaFetchPro" target="_blank" class="github-redirect"
+                    aria-label="MediaFetchPro on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://mediafetchpro.vercel.app/" target="_blank" class="cta"
+                    aria-label="MediaFetchPro live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/MediaFetchPro.webp" alt="MediaFetchPro preview image" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+
+  <!-------------------------------------------------------------------------------------------------FOOTER-->
+  <footer id="footer">
+      <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+        <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+      </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="my quote">
+            "Designing, Defining, and Delivering."
+          </article>
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>ExplorePortfolioFurther();</article>
+          </div>
+          <div class="logos">
+            <div class="icon icon-1">
+              <button class="button btn-1">
+                <a href="https://github.com/vuyourcyber01/"><svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg"
+                    version="1.1" viewBox="0 0 1024 1024" class="github">
+                    <path fill="white"
+                      d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z">
+                    </path>
+                  </svg></a></button>
+            </div>
+          
+            <div class="icon icon-2">
+              <button class="button btn-2">
+                <a href="https://codepen.io/VuyourCyber01/collections/public"><svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg"
+                    version="1.1" viewBox="0 0 1024 1024" class="codepen">
+                    <path fill="white"
+                      d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z">
+                    </path>
+                  </svg></a></button>
+            </div>
+
+            <div class="icon icon-3">
+              <button class="button btn-3">
+                <a href="mailto:whittanymcne1@gmail.com"><svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 493.497 493.497" xml:space="preserve" stroke="#ffffff">
+                    <path
+                      d="M444.556,85.218H48.942C21.954,85.218,0,107.171,0,134.16v225.177c0,26.988,21.954,48.942,48.942,48.942h395.613 c26.988,0,48.941-21.954,48.941-48.942V134.16C493.497,107.171,471.544,85.218,444.556,85.218z M460.87,134.16v225.177 c0,2.574-0.725,4.924-1.793,7.09L343.74,251.081l117.097-117.097C460.837,134.049,460.87,134.096,460.87,134.16z M32.628,359.336 V134.16c0-0.064,0.033-0.11,0.033-0.175l117.097,117.097L34.413,366.426C33.353,364.26,32.628,361.911,32.628,359.336z M251.784,296.902c-2.692,2.691-7.378,2.691-10.07,0L62.667,117.846h368.172L251.784,296.902z M172.827,274.152l45.818,45.819 c7.512,7.511,17.493,11.645,28.104,11.645c10.61,0,20.592-4.134,28.104-11.645l45.82-45.819l101.49,101.499H71.327L172.827,274.152z ">
+                    </path>
+                </svg></a></button>
+            </div>
+        </div>
+        <div class="footer-avatar-container">
+          <img src="src/png/footer-avatar-vuyo.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <article>
+            Code & Design by <i>Vuyokazi Mkane</i>
+            &#169; 2024
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+  
+</body>
+
+</html>
